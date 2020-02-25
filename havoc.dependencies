@@ -10,5 +10,11 @@
     "repository":"PixelExperience-Devices/vendor_xiaomi",
     "target_path":"vendor/xiaomi",
     "branch":"ten"
+  },
+  {
+    "remote":"github",
+    "repository":"hariimurti/android_vendor_custom",
+    "target_path":"vendor/custom",
+    "branch":"havoc"
   }
 ]
