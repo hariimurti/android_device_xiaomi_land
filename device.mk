@@ -449,6 +449,16 @@ PRODUCT_PACKAGES += \
  PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# ViPER4AndroidFX
+PRODUCT_PACKAGES += \
+    ViPER4AndroidFX
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/com.pittvandewitt.viperfx.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.pittvandewitt.viperfx.xml \
+    $(LOCAL_PATH)/prebuilt/bin/v4afx.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/v4afx.sh \
+    $(LOCAL_PATH)/prebuilt/etc/init/init.v4afx.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.v4afx.rc \
+    $(LOCAL_PATH)/prebuilt/lib/soundfx/libv4a_fx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libv4a_fx.so
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit proprietary files
