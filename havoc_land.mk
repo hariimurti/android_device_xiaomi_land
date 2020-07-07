@@ -22,10 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common Havoc stuff
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit custom stuff 
 $(call inherit-product-if-exists, vendor/custom/config.mk)
 
+# Define Gapps
 TARGET_GAPPS_ARCH := arm64
-TARGET_GAPPS_FULL := false
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
