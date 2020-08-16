@@ -20,16 +20,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Inherit some common HavocOS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+
+HAVOC_BUILD_TYPE := Custom
+
+# Inherit some bloatware stuff
+$(call inherit-product-if-exists, vendor/bloatware/packages.mk)
+
+# Define Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_GAPPS_LITE := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_land
+PRODUCT_NAME := havoc_land
 PRODUCT_MODEL := Redmi 3S
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
