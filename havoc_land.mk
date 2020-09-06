@@ -34,6 +34,7 @@ $(call inherit-product-if-exists, vendor/bloatware/packages.mk)
 # Define Gapps
 TARGET_GAPPS_ARCH := arm64
 TARGET_GAPPS_LITE := true
+TARGET_GCAMMOD_AS_DEFAULT_CAM := false
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
