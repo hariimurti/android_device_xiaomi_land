@@ -1,0 +1,14 @@
+[
+ {
+   "repository": "kdrag0n/proton-clang",
+   "target_path": "prebuilts/clang/host/linux-86/clang-proton",
+   "branch": "master",
+   "remote": "github"
+ },
+ {
+   "repository": "LineageOS/android_hardware_sony_timekeep",
+   "target_path": "hardware/sony/timekeep",
+   "branch": "lineage-17.1",
+   "remote": "github"
+ }
+]
