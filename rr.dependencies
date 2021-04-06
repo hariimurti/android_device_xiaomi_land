@@ -1,0 +1,21 @@
+[
+ {
+   "repository": "sairam1411/kernel_xiaomi_msm8937",
+   "target_path": "kernel/xiaomi/msm8937",
+   "branch": "10.xq",
+   "remote": "github"
+ },
+ {
+   "repository": "sairam60/vendor_xiaomi",
+   "target_path": "vendor/xiaomi",
+   "branch": "4.9",
+   "remote": "gitlab"
+ },
+ {
+   "repository": "LineageOS/android_hardware_sony_timekeep",
+   "target_path": "hardware/sony/timekeep",
+   "branch": "lineage-17.1",
+   "remote": "github"
+ }
+]
+
