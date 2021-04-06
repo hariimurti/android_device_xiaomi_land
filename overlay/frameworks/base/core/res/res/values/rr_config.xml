@@ -18,6 +18,14 @@
     <!-- Whether notify fingerprint client of successful cancelled authentication -->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <integer name="config_smartChargingBatteryLevel">100</integer>
+    <integer name="config_smartChargingBatteryResumeLevel">90</integer>
+    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
          of the following keys present:
