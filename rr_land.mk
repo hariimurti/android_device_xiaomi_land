@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit some common ResurrectionRemix stuff
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
-RR_BUILDTYPE := Release
+RR_BUILDTYPE := Final
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
